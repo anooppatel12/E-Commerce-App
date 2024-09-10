@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#ECDA8B"
+    tools:context=".CheckoutPage"
+    android:padding="15sp">
+
+   <LinearLayout
+       android:layout_marginTop="20sp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_marginBottom="20sp"
+               android:text="Checkout"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:textColor="#FB8C00"
+               android:gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/final_amount"
+               android:layout_alignParentEnd="true"
+               android:layout_marginBottom="20sp"
+               android:text="00"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:textColor="#F4511E"
+               android:gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+       </RelativeLayout>
+
+
+
+       <EditText
+           android:layout_marginTop="20sp"
+           android:id="@+id/address"
+           android:hint="Address"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:textColor="#000"
+           android:padding="12sp"
+           android:background="#fff"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:elevation="5sp"/>
+
+       <EditText
+           android:layout_marginTop="20sp"
+           android:id="@+id/city"
+           android:hint="City"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:textColor="#000"
+           android:padding="12sp"
+           android:background="#fff"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:elevation="5sp"/>
+
+       <EditText
+           android:layout_marginTop="20sp"
+           android:id="@+id/pin_code"
+           android:hint="Pin Code"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:textColor="#000"
+           android:padding="12sp"
+           android:background="#fff"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:elevation="5sp"/>
+
+
+   </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/order_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="#FFB300"
+        android:text="Order Place"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

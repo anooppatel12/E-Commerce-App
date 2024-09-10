@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSection">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <VideoView
+                    android:id="@+id/video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"/>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.SearchView
+                app:iconifiedByDefault="false"
+                android:layout_margin="10sp"
+                android:id="@+id/search_view"
+                android:background="#FB8C00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false" />
+
+            <TextView
+                android:text="Categories"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/baseline_east_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_category"
+                android:scrollbars="horizontal"
+                android:scrollbarSize="0sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5sp"
+        android:background="#FF9000">
+
+        <ImageView
+            android:src="@drawable/homepng"
+            android:layout_width="30sp"
+            android:layout_height="25sp"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_toStartOf="@+id/cart"
+            android:layout_marginEnd="20sp"
+            android:id="@+id/my_order"
+            android:src="@drawable/order"
+            android:layout_width="30sp"
+            android:layout_height="25sp" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:src="@drawable/trally"
+            android:layout_width="30sp"
+            android:layout_height="25sp"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

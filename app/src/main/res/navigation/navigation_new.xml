@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_new"
+    app:startDestination="@+id/notification">
+
+    <fragment android:name="com.example.kart.Fragments.OneFragment"
+        android:id="@+id/home"
+        android:label="One Fragment"
+        tools:layout="@layout/fragment_one"/>
+
+    <fragment android:name="com.example.kart.Fragments.TwoFragment"
+        android:id="@+id/notification"
+        android:label="Two Fragment"
+        tools:layout="@layout/fragment_two"/>
+
+    <fragment android:name="com.example.kart.Fragments.ThreeFragment"
+        android:id="@+id/dashboard"
+        android:label="Three Fragment"
+        tools:layout="@layout/fragment_three"/>
+</navigation>

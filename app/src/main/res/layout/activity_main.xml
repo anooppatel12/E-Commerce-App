@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <com.jaredrummler.materialspinner.MaterialSpinner
+           android:id="@+id/spinner"
+           android:layout_width="match_parent"
+           android:padding="5sp"
+           app:ms_background_color="#FB8C00"
+           app:ms_text_color="#000"
+           android:layout_height="wrap_content"/>
+
+
+
+       <TextView
+           android:id="@+id/camera_open"
+           android:layout_marginTop="20sp"
+           android:gravity="center"
+           android:layout_width="250sp"
+           android:layout_height="wrap_content"
+           android:text="Camera Open"
+           android:textSize="25sp"
+           android:textColor="#fff"
+           android:textStyle="bold"
+           android:padding="10sp"
+           android:background="@drawable/back_btn"/>
+
+       <TextView
+           android:id="@+id/main_section"
+           android:drawableRight="@drawable/baseline_arrow_right_24"
+           android:layout_marginTop="20sp"
+           android:gravity="center"
+           android:layout_width="250sp"
+           android:layout_height="wrap_content"
+           android:text="Main Section"
+           android:textSize="25sp"
+           android:textColor="#fff"
+           android:textStyle="bold"
+           android:padding="10sp"
+           android:background="@drawable/back_btn"/>
+
+       <TextView
+           android:id="@+id/admin_section"
+           android:drawableLeft="@drawable/baseline_admin_panel_settings_24"
+           android:layout_marginTop="20sp"
+           android:gravity="center"
+           android:layout_width="250sp"
+           android:layout_height="wrap_content"
+           android:text="Admin Section"
+           android:textSize="25sp"
+           android:textColor="#fff"
+           android:textStyle="bold"
+           android:padding="10sp"
+           android:background="@drawable/back_btn"/>
+
+       <TextView
+           android:id="@+id/logout"
+           android:drawableLeft="@drawable/baseline_arrow_left_24"
+           android:layout_marginTop="20sp"
+           android:gravity="center"
+           android:layout_width="250sp"
+           android:layout_height="wrap_content"
+           android:text="Logout"
+           android:textSize="25sp"
+           android:textColor="#fff"
+           android:textStyle="bold"
+           android:padding="10sp"
+           android:background="@drawable/back_btn"/>
+
+           <TextView
+               android:id="@+id/slider_h"
+               android:layout_marginTop="20sp"
+               android:gravity="center"
+               android:layout_width="250sp"
+               android:layout_height="wrap_content"
+               android:text="Slider"
+               android:textSize="25sp"
+               android:textColor="#fff"
+               android:textStyle="bold"
+               android:padding="10sp"
+               android:background="@drawable/back_btn"/>
+
+
+   </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_nav"
+        app:menu="@menu/bottom_menu"
+        android:background="#FB8C00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/test_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

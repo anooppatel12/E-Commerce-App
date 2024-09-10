@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "849844901209",
+    "firebase_url": "https://kart-655dd-default-rtdb.firebaseio.com",
+    "project_id": "kart-655dd",
+    "storage_bucket": "kart-655dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849844901209:android:c62b18bbb31b4fc10aa848",
+        "android_client_info": {
+          "package_name": "com.example.kart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkWvV8oeS21gM-PPNyN36M8tIjzvBogp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
